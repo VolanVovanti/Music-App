@@ -1,4 +1,7 @@
 module.exports = {
+
+  root: true,
+
   env: {
     browser: true,
     es2021: true,
@@ -21,5 +24,6 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'linebreak-style': 0,
+    'react/prop-types': ['off'],
   },
 };

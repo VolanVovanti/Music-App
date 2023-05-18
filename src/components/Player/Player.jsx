@@ -1,3 +1,5 @@
+import Icon from '../Menu/TrackList/PlayListSvg/PlayListSvgSprits';
+
 function Player() {
   return (
     <div className="bar">
@@ -8,27 +10,27 @@ function Player() {
             <div className="player__controls">
               <div className="player__btn-prev">
                 <svg className="player__btn-prev-svg" alt="prev">
-                  <use xlinkHref="img/icon/sprite.svg#icon-prev" />
+                  <Icon icon="prev" />
                 </svg>
               </div>
               <div className="player__btn-play _btn">
                 <svg className="player__btn-play-svg" alt="play">
-                  <use xlinkHref="img/icon/sprite.svg#icon-play" />
+                  <Icon icon="play" />
                 </svg>
               </div>
               <div className="player__btn-next">
                 <svg className="player__btn-next-svg" alt="next">
-                  <use xlinkHref="img/icon/sprite.svg#icon-next" />
+                  <Icon icon="next" />
                 </svg>
               </div>
               <div className="player__btn-repeat _btn-icon">
                 <svg className="player__btn-repeat-svg" alt="repeat">
-                  <use xlinkHref="img/icon/sprite.svg#icon-repeat" />
+                  <Icon icon="repeat" />
                 </svg>
               </div>
               <div className="player__btn-shuffle _btn-icon">
                 <svg className="player__btn-shuffle-svg" alt="shuffle">
-                  <use xlinkHref="img/icon/sprite.svg#icon-shuffle" />
+                  <Icon icon="shuffle" />
                 </svg>
               </div>
             </div>
@@ -37,7 +39,7 @@ function Player() {
               <div className="track-play__contain">
                 <div className="track-play__image">
                   <svg className="track-play__svg" alt="music">
-                    <use xlinkHref="img/icon/sprite.svg#icon-note" />
+                    <Icon icon="note" />
                   </svg>
                 </div>
                 <div className="track-play__author">
@@ -51,12 +53,12 @@ function Player() {
               <div className="track-play__like-dis">
                 <div className="track-play__like _btn-icon">
                   <svg className="track-play__like-svg" alt="like">
-                    <use xlinkHref="img/icon/sprite.svg#icon-like" />
+                    <Icon icon="like" />
                   </svg>
                 </div>
                 <div className="track-play__dislike _btn-icon">
                   <svg className="track-play__dislike-svg" alt="dislike">
-                    <use xlinkHref="img/icon/sprite.svg#icon-dislike" />
+                    <Icon icon="dislike" />
                   </svg>
                 </div>
               </div>
@@ -66,7 +68,7 @@ function Player() {
             <div className="volume__content">
               <div className="volume__image">
                 <svg className="volume__svg" alt="volume">
-                  <use xlinkHref="img/icon/sprite.svg#icon-volume" />
+                  <Icon icon="volume" />
                 </svg>
               </div>
               <div className="volume__progress _btn">

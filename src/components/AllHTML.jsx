@@ -3,8 +3,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react';
-import Menu from './Menu';
-import Player from './Player';
+import Menu from './Menu/Menu';
+import Player from './Player/Player';
 
 function AllHTML() {
   return (

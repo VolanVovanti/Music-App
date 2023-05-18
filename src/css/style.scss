@@ -147,6 +147,10 @@ body {
         justify-content: space-between;
     }
 
+    &__burger:hover {
+        cursor: pointer;
+    }
+
     &__menu {
         display: block;
         visibility: visible;
