@@ -1,7 +1,4 @@
 module.exports = {
-
-  root: true,
-
   env: {
     browser: true,
     es2021: true,
@@ -12,15 +9,12 @@ module.exports = {
     'airbnb',
     'plugin:react/jsx-runtime',
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'linebreak-style': 0,

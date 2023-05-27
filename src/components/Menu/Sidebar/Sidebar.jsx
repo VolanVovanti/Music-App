@@ -1,8 +1,4 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/control-has-associated-label */
-
 import Playlist01 from '../../../asset/img/playlist01.png';
 import Playlist02 from '../../../asset/img/playlist02.png';
 import Playlist03 from '../../../asset/img/playlist03.png';

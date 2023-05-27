@@ -1,8 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/anchor-has-content */
-/* eslint-disable jsx-a11y/control-has-associated-label */
-
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import { useState, useEffect } from 'react';
 import Nav from './Nav/Nav';
@@ -17,7 +12,7 @@ function Menu() {
   useEffect(() => {
     const timer = setInterval(() => {
       setLoading(false);
-    }, 0);
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,15 +24,25 @@ function Menu() {
           <svg className="search__svg">
             <use xlinkHref="img/icon/sprite.svg#icon-search" />
           </svg>
-          <input className="search__text" type="search" placeholder="Поиск" name="search" />
+          <input
+            className="search__text"
+            type="search"
+            placeholder="Поиск"
+            name="search"
+          />
         </div>
-        <Header />
-        <Filters />
-        <TrackList />
+        <SkeletonTheme color="#e1e1e1" highlightColor="#f2f2f2">
+          {loading ? <Skeleton count={10} /> : <Header />}
+        </SkeletonTheme>
+        <SkeletonTheme color="#e1e1e1" highlightColor="#f2f2f2">
+          {loading ? <Skeleton count={10} /> : <Filters />}
+        </SkeletonTheme>
+        <SkeletonTheme color="#e1e1e1" highlightColor="#f2f2f2">
+          {loading ? <Skeleton count={10} /> : <TrackList />}
+        </SkeletonTheme>
       </div>
-      {' '}
       <SkeletonTheme color="#e1e1e1" highlightColor="#f2f2f2">
-        {loading ? (<Skeleton count={10} />) : (<Sidebar />)}
+        {loading ? <Skeleton count={10} /> : <Sidebar />}
       </SkeletonTheme>
     </main>
   );

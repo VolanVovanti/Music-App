@@ -1,11 +1,10 @@
 // import PropTypes from 'prop-types';
 
-function FilterButton() {
+function FilterButton({ children, clickAction }) {
   return (
-    <div />
-  //     <div className="filter__button" onClick={clickAction}>
-  //       {children}
-  //     </div>
+    <div aria-hidden="true" className="filter__button" onClick={clickAction}>
+      {children}
+    </div>
   );
 }
 
