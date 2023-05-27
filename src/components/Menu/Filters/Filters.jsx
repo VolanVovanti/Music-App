@@ -17,7 +17,9 @@ function Filters() {
         className="filter_button-autor _btn-text"
         onClick={() => toggleVisibleFilter('author')}
       >
-        <FilterButton clickAction={() => toggleVisibleFilter('author')}> По Автору </FilterButton>
+        <FilterButton clickAction={() => toggleVisibleFilter('author')}>
+          По Автору
+        </FilterButton>
       </button>
       {visibleFilter === 'author' && 'Список авторов'}
 
@@ -26,7 +28,9 @@ function Filters() {
         className="filter_button-autor _btn-text"
         onClick={() => toggleVisibleFilter('year')}
       >
-        <FilterButton clickAction={() => toggleVisibleFilter('year')}> По Году </FilterButton>
+        <FilterButton clickAction={() => toggleVisibleFilter('year')}>
+          По Году
+        </FilterButton>
       </button>
       {visibleFilter === 'year' && 'По году'}
 
@@ -35,7 +39,9 @@ function Filters() {
         className="filter_button-autor _btn-text"
         onClick={() => toggleVisibleFilter('genre')}
       >
-        <FilterButton clickAction={() => toggleVisibleFilter('genre')}>По Жанру </FilterButton>
+        <FilterButton clickAction={() => toggleVisibleFilter('genre')}>
+          По Жанру
+        </FilterButton>
       </button>
       {visibleFilter === 'genre' && ' По жанру'}
     </div>
