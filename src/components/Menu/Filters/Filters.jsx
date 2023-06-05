@@ -12,27 +12,21 @@ function Filters() {
     <div className="centerblock__filter filter">
       <div className="filter__title">Искать по:</div>
 
-      <button
-        type="button"
-      >
+      <button type="button" className="filter__button button-author _btn-text">
         <FilterButton clickAction={() => toggleVisibleFilter('author')}>
           По Автору
         </FilterButton>
       </button>
       {visibleFilter === 'author' && 'Список авторов'}
 
-      <button
-        type="button"
-      >
+      <button type="button" className="filter__button button-year _btn-text">
         <FilterButton clickAction={() => toggleVisibleFilter('year')}>
           По Году
         </FilterButton>
       </button>
       {visibleFilter === 'year' && 'По году'}
 
-      <button
-        type="button"
-      >
+      <button type="button" className="filter__button button-genre _btn-text">
         <FilterButton clickAction={() => toggleVisibleFilter('genre')}>
           По Жанру
         </FilterButton>

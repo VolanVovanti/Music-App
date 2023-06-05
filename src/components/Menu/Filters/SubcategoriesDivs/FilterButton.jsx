@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function FilterButton({ children, clickAction }) {
   return (
@@ -8,8 +8,8 @@ function FilterButton({ children, clickAction }) {
   );
 }
 
-// Button.propTypes = {
-//   children: PropTypes.node.isRequired,
-// };
+FilterButton.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default FilterButton;
